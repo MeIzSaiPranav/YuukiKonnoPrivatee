@@ -2,6 +2,7 @@ import asyncio
 import sys
 
 from motor import motor_asyncio
+from odmantic import AIOEngine
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
