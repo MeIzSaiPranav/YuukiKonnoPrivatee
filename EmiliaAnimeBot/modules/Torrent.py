@@ -394,7 +394,5 @@ async def paginate_nexttorrent(event):
 
 _help_ = """
  - /torrent <i>text</i>: Search for torrent links
-Special Credits to Sumanjay for api and also for julia project
-"""
 
 _mod_name_ = "Torrent"
