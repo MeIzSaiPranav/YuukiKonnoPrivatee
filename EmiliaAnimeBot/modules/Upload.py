@@ -11,7 +11,7 @@ from EmiliaAnimeBot import telethn as bot
 from EmiliaAnimeBot.modules.urluploader import download_file
 from EmiliaAnimeBot.utils.uputils import humanbytes, progress
 
-DOWNLOADPATH = "/Downloads"
+DOWNLOADPATH = f"./EmiliaAnimeBot/Downloads"
 
 
 def get_date_in_two_weeks():
