@@ -390,9 +390,3 @@ async def paginate_nexttorrent(event):
             ],
         ],
     )
-
-
-_help_ = """
- - /torrent <i>text</i>: Search for torrent links
-
-_mod_name_ = "Torrent"
