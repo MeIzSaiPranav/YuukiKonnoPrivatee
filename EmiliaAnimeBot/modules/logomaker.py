@@ -20,7 +20,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./EmiliaAnimeBot/resources/photo_2021-09-16_18-18-45.jpg')
+    img = Image.open('./EmiliaAnimeBot/resources/marshmallow.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 399
