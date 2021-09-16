@@ -11,10 +11,11 @@ from aiohttp import ClientSession
 
 aiohttpsession = ClientSession()
 
-ARQ_API_URL= "https://thearq.tech"
+ARQ_API_URL="https://thearq.tech"
 ARQ_API_KEY= 'MTXJXE-ELSWXE-UDRXJC-JCJQXN-ARQ'
 
-
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+	
 
 
 async def quotify(messages: list):
