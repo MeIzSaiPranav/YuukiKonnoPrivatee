@@ -28,12 +28,12 @@ async def lego(event):
     shadowcolor = "blue"
     font = ImageFont.truetype("./EmiliaAnimeBot/resources/Fast Hand.otf", 100)
     w, h = draw.textsize(text, font=font)
-    h += int(h*0.21)
+    h += int(h*0.20)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(222, 222, 222))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="green", stroke_width=7, stroke_fill="black")
+    draw.text((x, y), text, font=font, fill="Pink", stroke_width=7, stroke_fill="yellow")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @Me_iz_mad_boi")
