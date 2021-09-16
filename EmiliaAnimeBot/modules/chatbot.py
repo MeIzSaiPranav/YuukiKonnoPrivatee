@@ -11,7 +11,7 @@ from EmiliaAnimeBot.pyrogramee.errors import capture_err
 from EmiliaAnimeBot.utils.filter_groups import chatbot_group
 
 ARQ_API_URL = "https://thearq.tech"
-ARQ_API_KEY = 'MTXJXE-ELSWXE-UDRXJC-JCJQXN-ARQ'
+ARQ_API_KEY = 'JTAIDA-NJXFTW-XUDHHJ-QSWVBM-ARQ'
 # My Own API_KEY Don't Fuck
 aiohttpsession = ClientSession()
 
