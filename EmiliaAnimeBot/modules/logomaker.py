@@ -1,6 +1,6 @@
-from SaitamaRobot.events import register
-from SaitamaRobot import OWNER_ID
-from SaitamaRobot import telethn as tbot
+from EmiliaAnimeBot.events import register
+from EmiliaAnimeBot import OWNER_ID
+from EmiliaAnimeBot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
