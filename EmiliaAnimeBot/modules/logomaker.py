@@ -23,17 +23,17 @@ async def lego(event):
     img = Image.open('./EmiliaAnimeBot/resources/marshmallow.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 500
+    pointsize = 399
     fillcolor = "gold"
     shadowcolor = "blue"
     font = ImageFont.truetype("./EmiliaAnimeBot/resources/Fast Hand.otf", 100)
     w, h = draw.textsize(text, font=font)
-    h += int(h*0.20)
+    h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(222, 222, 222))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="Pink", stroke_width=7, stroke_fill="yellow")
+    draw.text((x, y), text, font=font, fill="Green", stroke_width=7, stroke_fill="red")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @Me_iz_mad_boi")
