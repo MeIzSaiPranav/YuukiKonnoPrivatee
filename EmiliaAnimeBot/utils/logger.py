@@ -32,4 +32,4 @@ logger.add(
     diagnose=True,
     level="INFO",
 )
-log.info("Enabled logging intro daisy.log file.")
+log.info("Enabled logging intro EmiliaAnimeBot.log file.")
