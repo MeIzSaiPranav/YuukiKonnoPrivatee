@@ -6,7 +6,7 @@ import requests
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import filters
 
-from EmiliaAnimeBot import register
+from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot.services.pyrogram import pbot
 
 from .utils.anime import (
