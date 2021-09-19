@@ -215,6 +215,7 @@ __help__ = """
  ❍/anime_logo text : i'll make a Anime logo With You Name
  ❍/marsho_logo text : i'll make a special marshmello logo with your name
  ❍/hacker_logo text : i'll make a hacker logo with you name 
- ❍ If You Use Caps In Cmd It Won't Work.
+
+_If You Use Caps In Command It Won't Work.
  """
 __mod_name__ = "Logo"
