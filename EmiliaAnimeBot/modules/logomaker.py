@@ -103,7 +103,7 @@ async def lego(event):
     img = Image.open('./EmiliaAnimeBot/resources/hamcker.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 199
+    pointsize = 28
     fillcolor = "gold"
     shadowcolor = "blue"
     font = ImageFont.truetype("./EmiliaAnimeBot/resources/Ok.ttf", 85)
