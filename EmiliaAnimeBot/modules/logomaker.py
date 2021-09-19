@@ -212,5 +212,9 @@ file_helpo = file_help.replace("_", " ")
 __help__ = """
  ❍ /marsh_logo text :  I'll Create Marshmello logo with your name
  ❍ /catto_logo text : I'll Create Catto logo with your name
+ ❍/anime_logo text : i'll make a Anime logo With You Name
+ ❍/marsho_logo text : i'll make a special marshmello logo with your name
+ ❍/hacker_logo text : i'll make a hacker logo with you name 
+  If You Use Caps In Cmd It Won't Work.
  """
 __mod_name__ = "Logo"
