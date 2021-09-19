@@ -1,6 +1,6 @@
 import aiohttp
 from pyrogram import filters
-from EmiliaAnimeBot import pbot
+from EmiliaAnimeBot import pgram as pbot
 from EmiliaAnimeBot.pyrogramee.errors import capture_err
 
 
