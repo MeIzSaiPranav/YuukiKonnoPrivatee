@@ -3,7 +3,7 @@ import html
 import bs4
 import jikanpy
 import requests
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import filters
 
 from EmiliaAnimeBot import register
