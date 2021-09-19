@@ -85,7 +85,7 @@ async def lego(event):
  
  
 
-@register(pattern="^/anime_logo ?(.*)")
+@register(pattern="^/hacker_logo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -165,7 +165,7 @@ async def lego(event):
 
 
   
-@register(pattern="^/hecker_logo ?(.*)")
+@register(pattern="^/anime_logo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
