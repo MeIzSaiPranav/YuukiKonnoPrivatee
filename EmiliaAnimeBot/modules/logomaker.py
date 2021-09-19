@@ -103,15 +103,15 @@ async def lego(event):
     img = Image.open('./EmiliaAnimeBot/resources/hamcker.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 399
+    pointsize = 199
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EmiliaAnimeBot/resources/Ok.ttf", 85)
+    font = ImageFont.truetype("./EmiliaAnimeBot/resources/Ok.ttf", 75)
     w, h = draw.textsize(text, font=font)
-    h += int(h*0.21)
+    h += int(h*0.13)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(327, 222, 222))
-    x = (image_widthz-w)/2
+    draw.text(((image_widthz-w)/1, (image_heightz-h)/1), text, font=font, fill=(327, 222, 222))
+    x = (image_widthz-w)/1
     y= ((image_heightz-h)/2+3)
     draw.text((x, y), text, font=font, fill="White", stroke_width=7, stroke_fill="Red")
     fname2 = "LogoByYone.png"
