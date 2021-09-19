@@ -1,7 +1,7 @@
 from pyrogram import filters
 
 from EmiliaAnimeBot.pyrogramee.pluginshelper import admins_only, get_text
-from EmiliaAnimeBot import pgram
+from EmiliaAnimeBot import pgram as app
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
