@@ -186,7 +186,7 @@ async def lego(event):
     pointsize = 399
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EmiliaAnimeBot/resources/Doctor Glitch.otf", 85)
+    font = ImageFont.truetype("./EmiliaAnimeBot/resources/Deadly Advance Italic.otf", 85)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
