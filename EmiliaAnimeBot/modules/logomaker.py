@@ -230,10 +230,10 @@ async def lego(event):
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/1), text, font=font, fill=(327, 222, 222))
+    draw.text(((image_widthz-w)/2, (image_heightz-h)/0), text, font=font, fill=(327, 222, 222))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="White", stroke_width=7, stroke_fill="Pink")
+    draw.text((x, y), text, font=font, fill="White", stroke_width=7, stroke_fill="Blue")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @Me_iz_mad_boi")
