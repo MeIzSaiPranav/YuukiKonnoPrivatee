@@ -1,6 +1,6 @@
 from telethon import events
 import asyncio
-from EmiliaAnimeBot.Cutiepiibot.py
+from EmiliaAnimeBot.Cutiepiibot
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 import os
