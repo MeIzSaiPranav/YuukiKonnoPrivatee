@@ -4,7 +4,7 @@ import requests
 import wget
 from pyrogram import filters
 
-from EmiliaAnimeBot import pbot as Jebot
+from EmiliaAnimeBot import pgram as Jebot
 from EmiliaAnimeBot.utils.ut import get_arg
 
 
