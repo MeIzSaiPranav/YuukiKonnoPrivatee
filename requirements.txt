@@ -72,3 +72,4 @@ pytube
 python-arq
 heroku3
 aiofiles
+wget
