@@ -74,4 +74,3 @@ heroku3
 aiofiles
 wget
 cfscrape
-youtube_dl
