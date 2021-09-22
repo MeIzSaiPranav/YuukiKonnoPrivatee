@@ -6,6 +6,7 @@ import spamwatch
 
 import telegram.ext as tg
 from telethon import TelegramClient
+from telethon.sessions import StringSession
 from pyrogram import Client, errors
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
@@ -76,6 +77,7 @@ if ENV:
     ARQ_API_KEY = os.environ.get('ARQ_API_KEY', None)
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
+    SESSION = os.environ.get('SESSION', None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "rss").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
@@ -143,6 +145,7 @@ else:
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
+    SESSION = Config.SESSION
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
@@ -184,6 +187,7 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("emilia", API_ID, API_HASH)
 pgram = Client("EmiPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 mongo_client = MongoClient(MONGO_DB_URI)
+sex = TelegramClient (StringSession(SESSION), api_id = API_ID, api_hash = API_HASH)
 db = mongo_client.EmiliaAnimeBot
 dispatcher = updater.dispatcher
 
