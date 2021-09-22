@@ -77,7 +77,6 @@ if ENV:
     ARQ_API_KEY = os.environ.get('ARQ_API_KEY', None)
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
-    SESSION = os.environ.get('SESSION', None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "rss").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
