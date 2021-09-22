@@ -14,7 +14,7 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from Mizuki.events import register as Mizuki
+from EmiliaAnimeBot.events import register as Yuuki
 
 
 @Mizuki(pattern="^/yt(audio|video) (.*)")
