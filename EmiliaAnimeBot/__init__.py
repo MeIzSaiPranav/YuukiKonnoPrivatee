@@ -186,7 +186,6 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("emilia", API_ID, API_HASH)
 pgram = Client("EmiPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 mongo_client = MongoClient(MONGO_DB_URI)
-sex = TelegramClient (StringSession(SESSION), api_id = API_ID, api_hash = API_HASH)
 db = mongo_client.EmiliaAnimeBot
 dispatcher = updater.dispatcher
 
