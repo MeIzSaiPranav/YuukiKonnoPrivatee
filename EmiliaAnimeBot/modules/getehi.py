@@ -4,7 +4,7 @@ from telegram.ext import CallbackContext, run_async
 from EmiliaAnimeBot import dispatcher
 from EmiliaAnimeBot.modules.disable import DisableAbleCommandHandler
 
-EHI_STRINGS = "Here, new ehi files by @TheMizukiBot 👸\n\n👉 https://da.gd/OhPiHf"
+EHI_STRINGS = "Here, new ehi files by @YuukiKonnoRobot 👸\n\n👉 https://da.gd/OhPiHf"
 
 
 @run_async
