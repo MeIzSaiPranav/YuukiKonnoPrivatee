@@ -29,7 +29,7 @@ class AioHttp:
 
 #imported from @LordHitsuki_BOT
 
-@pbot.on_inline_query()
+@pgram.on_inline_query()
 async def inline_query_handler(client, query):
     string = query.query.lower()
     if string == "":
