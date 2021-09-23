@@ -190,6 +190,9 @@ mongo_client = MongoClient(MONGO_DB_URI)
 db = mongo_client.EmiliaAnimeBot
 dispatcher = updater.dispatcher
 
+telegraph = Telegraph()
+telegraph.create_account(short_name="mizu")
+
 async def get_entity(client, entity):
     entity_client = client
     if not isinstance(entity, Chat):
