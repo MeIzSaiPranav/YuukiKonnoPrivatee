@@ -78,6 +78,8 @@ if ENV:
     ARQ_API_KEY = os.environ.get('ARQ_API_KEY', None)
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
+    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "748bd49a-9f86-410b-af15-d0aa4fc014a3")
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "yuukikon")
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "rss").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
@@ -152,6 +154,8 @@ else:
     API_HASH = Config.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
+    HEROKU_API_KEY = Config.HEROKU_API_KEY
+    HEROKU_APP_NAME = Config.HEROKU_APP_NAME
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
