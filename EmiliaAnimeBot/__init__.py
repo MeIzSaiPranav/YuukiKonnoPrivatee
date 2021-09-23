@@ -7,6 +7,7 @@ import spamwatch
 import telegram.ext as tg
 from telethon import TelegramClient
 from telethon.sessions import StringSession
+from telegraph import Telegraph
 from pyrogram import Client, errors
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
