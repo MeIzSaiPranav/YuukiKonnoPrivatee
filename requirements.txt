@@ -74,4 +74,5 @@ heroku3
 aiofiles
 wget
 cfscrape
+selenium
 ffmpeg-python
