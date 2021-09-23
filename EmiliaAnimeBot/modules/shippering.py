@@ -1,4 +1,4 @@
-from EmiliaAnimeBot import pgram as app
+from EmiliaAnimeBot import pbot as app
 from EmiliaAnimeBot.utils.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
