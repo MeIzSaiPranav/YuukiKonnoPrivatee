@@ -557,7 +557,7 @@ def kayo(update: Update, context: CallbackContext):
     
     
 
- @pbot.on_message(filters.command("nhentai"))
+ @pbot.on_message(filters.command("nhentai")
 async def nhentai(_, message):
     if len(message.command) < 2:
         await message.delete()
