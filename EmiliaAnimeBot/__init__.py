@@ -89,6 +89,7 @@ if ENV:
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
+    API_WEATHER = os.environ.get("API_OPENWEATHER", None)
     WALL_API = os.environ.get('WALL_API', None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "3ckuCb4MdD4qziuacviLgfQG")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
