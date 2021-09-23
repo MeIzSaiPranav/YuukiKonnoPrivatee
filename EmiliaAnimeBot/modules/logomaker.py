@@ -245,7 +245,7 @@ async def lego(event):
    
 
    
-@register(pattern="^/Ronaldo ?(.*)")
+@register(pattern="^/ronaldo ?(.*)")
 async def lego(event):
  quew = event.pattern_match.group(1)
  if event.sender_id == OWNER_ID:
@@ -266,7 +266,7 @@ async def lego(event):
     pointsize = 399
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./EmiliaAnimeBot/resources/Ronaldo.ttf", 85)
+    font = ImageFont.truetype("./EmiliaAnimeBot/resources/HBM Razed Trend (personal use only).ttf", 85)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
