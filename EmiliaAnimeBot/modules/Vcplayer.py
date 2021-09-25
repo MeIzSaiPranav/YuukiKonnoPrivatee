@@ -88,6 +88,5 @@ f"""
 Join @PigasusUpdates
 """,
 
-f"""
-=>> If Any Doubts Contact Owner : @Me_Iz_Mad_Boi
+PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME 
 """
