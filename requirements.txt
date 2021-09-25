@@ -77,3 +77,4 @@ cfscrape
 selenium
 ffmpeg-python
 numpy
+cloudmersive-ocr-api-client==3.0.1
