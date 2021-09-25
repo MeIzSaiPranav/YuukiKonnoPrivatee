@@ -93,7 +93,7 @@ if ENV:
                                  'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
-    tbot = TelegramClient(None, API_KEY, API_HASH)
+    tbot = TelegramClient(None, "4813160", "ee7b7d03a79dc5756abce857e73bda28")
     CASH_API_KEY = os.environ.get('CASH_API_KEY', None)
     TIME_API_KEY = os.environ.get('TIME_API_KEY', None)
     API_WEATHER = os.environ.get("API_OPENWEATHER", None)
