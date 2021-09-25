@@ -12,6 +12,10 @@ from pyrogram import Client, errors
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
 StartTime = time.time()
+CMD_LIST = {}
+CMD_HELP = {}
+LOAD_PLUG = {}
+
 # enable logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
