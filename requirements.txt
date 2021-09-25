@@ -76,3 +76,4 @@ wget
 cfscrape
 selenium
 ffmpeg-python
+numpy
