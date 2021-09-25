@@ -1,4 +1,4 @@
-from EmiliaAnimeBot.Config import Config
+from EmiliaAnimeBot.fake_config import Config
 from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot import CMD_HELP
 from EmiliaAnimeBot import tbot
