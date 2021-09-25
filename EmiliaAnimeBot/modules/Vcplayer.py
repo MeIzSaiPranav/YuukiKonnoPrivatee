@@ -10,7 +10,7 @@ Assistant username:- @YuukiXMusic
 1) Make bot admin (Group and in channel if use cplay)
 2) Start a voice chat
 3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+*) If userbot joined enjoy music, If not add @YuukiXMusic to your group and retry
 For Channel Music Play
 1) Make me admin of your channel 
 2) Send /userbotjoinchannel in linked group
@@ -55,7 +55,7 @@ channel is also can be used instead of c ( /cplay = /channelplay )
 1) Get your channel ID.
 2) Create a group with tittle: Channel Music: your_channel_id
 3) Add bot as Channel admin with full perms
-4) Add @{ASSISTANT_NAME} to the channel as an admin.
+4) Add @YuukiXMusic to the channel as an admin.
 5) Simply send commands in your group. (remember to use /ytplay instead /play)
 Join @PigasusUpdates
 """,
@@ -87,4 +87,6 @@ f"""
 *Sudo Users can execute any command in any groups
 Join @PigasusUpdates
 """
-      ]
+] 
+PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME 
+"""
