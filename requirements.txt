@@ -77,3 +77,4 @@ cfscrape
 selenium
 ffmpeg-python
 numpy
+pymongo==3.11.0
