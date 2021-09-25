@@ -86,6 +86,4 @@ f"""
  - /pmpermit [on/off] - enable/disable pmpermit message
 *Sudo Users can execute any command in any groups
 Join @PigasusUpdates
-
-PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME 
 """
