@@ -132,11 +132,3 @@ async def _(event):
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
-
-
-__help__ = """
- - /paste: Create a paste or a shortened url using del.dog
- - /getpaste <key>: Get the content of a paste or shortened url from del.dog
-"""
-
-CMD_HELP.update({file_helpo: [file_helpo, __help__]})
