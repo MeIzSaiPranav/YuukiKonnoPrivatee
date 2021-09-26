@@ -61,7 +61,7 @@ bing_image_downloader
 html2text
 bs4
 motor
-search_engine_parser
+search-engine-parser==0.6.6
 dnspython
 youtube_search
 telegraph
