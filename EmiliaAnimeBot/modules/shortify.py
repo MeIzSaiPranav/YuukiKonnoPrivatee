@@ -22,7 +22,7 @@ import aiohttp
 from pyrogram import filters
 
 from EmiliaAnimeBot.function.pluginhelpers import admins_only, get_text
-from EmiliaAnimeBot.services.pyrogram import pbot
+from EmiliaAnimeBot import pbot
 
 
 # Used my api key here, don't fuck with it
