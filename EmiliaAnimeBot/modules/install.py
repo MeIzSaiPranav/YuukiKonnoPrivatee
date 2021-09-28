@@ -1,3 +1,5 @@
+# All Credit To William Butcher Bot.
+# Ported This Plugin here By Devil from wbb.
 import os
 
 from pyrogram import filters
