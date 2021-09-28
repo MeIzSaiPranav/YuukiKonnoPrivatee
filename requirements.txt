@@ -80,3 +80,4 @@ cloudmersive-ocr-api-client==3.0.1
 glitch_this
 NumPy
 opencv-python-headless
+odmantic
