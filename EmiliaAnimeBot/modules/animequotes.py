@@ -21,7 +21,7 @@ def yuukiquotes(update: Update, context: CallbackContext):
         random.choice(animequotes_strings.QUOTES_IMG))
 
 __help__ = """
- • `/yuukiquotes`*:* get Cute And Motivational Yuuki Quotes Special Thanks To @AASFCYBERKING
+ • `/yuukiquotes `*:* get Cute And Motivational Yuuki Quotes Special Thanks To @AASFCYBERKING
  
 """
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("yuukiquotes", yuukiquotes)
