@@ -9,7 +9,7 @@ from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_1 import (  # pylint:disable=imp
     normal_blur,
     box_blur,
 )
-from MashaRoBot.pyrogramee.ImageEditor.edit_2 import (  # pylint:disable=import-error
+from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_2 import (  # pylint:disable=import-error
     circle_with_bg,
     circle_without_bg,
     sticker,
@@ -19,7 +19,7 @@ from MashaRoBot.pyrogramee.ImageEditor.edit_2 import (  # pylint:disable=import-
     pencil,
     cartoon,
 )
-from MashaRoBot.pyrogramee.ImageEditor.edit_3 import (  # pylint:disable=import-error
+from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_3 import (  # pylint:disable=import-error
     green_border,
     blue_border,
     black_border,
@@ -35,7 +35,7 @@ from MashaRoBot.pyrogramee.ImageEditor.edit_4 import (  # pylint:disable=import-
     removebg_plain,
     removebg_sticker,
 )
-from MashaRoBot.pyrogramee.ImageEditor.edit_5 import (  # pylint:disable=import-error
+from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -49,7 +49,7 @@ from MashaRoBot.pyrogramee.ImageEditor.edit_5 import (  # pylint:disable=import-
 )
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from MashaRoBot import pbot as Client
+from EmiliaAnimeBot import pbot as Client
 lel = 00000000
 # pylint:disable=import-error
 @Client.on_message(filters.command(["edit", "editor"]))
@@ -408,7 +408,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 __mod_name__ = "Image Editor"
 __help__ = """
 <b> IMAGE EDITOR </b>
-Masha have some advanced image editing tools inbuilt
+Yuuki have some advanced image editing tools inbuilt
 Bright,Circle,RemBG,Blur,Border,Flip,Glitch,Sticker maker and more
 - /edit <i> reply to image</i> : Open the image editor
 """
