@@ -81,3 +81,4 @@ glitch_this
 NumPy
 opencv-python-headless
 odmantic
+dateparser==1.0.0
