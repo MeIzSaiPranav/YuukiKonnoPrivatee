@@ -2,14 +2,18 @@ import html
 import random
 import time
 
-import EmiliaAnimeBot.modules.fun_strings as fun_strings
-from EmiliaAnimeBot import dispatcher
-from EmiliaAnimeBot.modules.disable import DisableAbleCommandHandler
-from EmiliaAnimeBot.modules.helper_funcs.chat_status import is_user_admin
-from EmiliaAnimeBot.modules.helper_funcs.extraction import extract_user
+import Sophia.modules.fun_strings as fun_strings
+from Sophia import dispatcher
+from Sophia.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Sophia.modules.helper_funcs.chat_status import is_user_admin
+from Sophia.modules.helper_funcs.alternate import typing_action
+from Sophia.modules.helper_funcs.filters import CustomFilters
+from Sophia.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
-from telegram.ext import CallbackContext, run_async
+from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
+
+import Sophia.modules.helper_funcs.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -322,23 +326,43 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_to_message.reply_text(string)
     else:
         message.reply_text(string)
+        
+        
+@run_async
+@typing_action
+def goodnight(update, context):
+    message = update.effective_message
+    reply = random.choice(fun.GDNIGHT)
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+
+
+@run_async
+@typing_action
+def goodmorning(update, context):
+    message = update.effective_message
+    reply = random.choice(fun.GDMORNING)
+    message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+    
+
+
+
 
 
 __help__ = """
- ❍ /runs*:* reply a random string from an array of replies
- ❍ /slap*:* slap a user, or get slapped if not a reply
- ❍ /shrug*:* get shrug XD
- ❍ /table*:* get flip/unflip :v
- ❍ /decide*:* Randomly answers yes/no/maybe
- ❍ /toss*:* Tosses A coin
- ❍ /bluetext*:* check urself :V
- ❍ /roll*:* Roll a dice
- ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ❍ /shout <keyword>*:* write anything you want to give loud shout
- ❍ /weebify <text>*:* returns a weebified text
- ❍ /sanitize*:* always use this before /pat or any contact
- ❍ /pat*:* pats a user, or get patted
- ❍ /8ball*:* predicts using 8ball method 
+ - /runs*:* reply a random string from an array of replies
+ - /slap*:* slap a user, or get slapped if not a reply
+ - /shrug*:* get shrug XD
+ - /table*:* get flip/unflip :v
+ - /decide*:* Randomly answers yes/no/maybe
+ - /toss*:* Tosses A coin
+ - /bluetext*:* check urself :V
+ - /roll*:* Roll a dice
+ - /rlg*:* Join ears,nose,mouth and create an emo ;-;
+ - /shout <keyword>*:* write anything you want to give loud shout
+ - /weebify <text>*:* returns a weebified text
+ - /sanitize*:* always use this before /pat or any contact
+ - /pat*:* pats a user, or get patted
+ - /8ball*:* predicts using 8ball method 
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -355,6 +379,12 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
+GDMORNING_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(gm|good morning)"), goodmorning, friendly="goodmorning"
+)
+GDNIGHT_HANDLER = DisableAbleMessageHandler(
+    Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
+)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
@@ -370,6 +400,8 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(GDMORNING_HANDLER)
+dispatcher.add_handler(GDNIGHT_HANDLER)
 
 __mod_name__ = "Memes"
 __command_list__ = [
@@ -403,22 +435,6 @@ __handlers__ = [
     SHOUT_HANDLER,
     WEEBIFY_HANDLER,
     EIGHTBALL_HANDLER,
+    GDMORNING_HANDLER,
+    GDNIGHT_HANDLER,
 ]
-
-__mod_name__ = "Fun"
-__help__ = """
- ❍ /runs*:* reply a random string from an array of replies
- ❍ /slap*:* slap a user, or get slapped if not a reply
- ❍ /shrug*:* get shrug XD
- ❍ /table*:* get flip/unflip :v
- ❍ /decide*:* Randomly answers yes/no/maybe
- ❍ /toss*:* Tosses A coin
- ❍ /bluetext*:* check urself :V
- ❍ /roll*:* Roll a dice
- ❍ /rlg*:* Join ears,nose,mouth and create an emo ;-;
- ❍ /shout <keyword>*:* write anything you want to give loud shout
- ❍ /weebify <text>*:* returns a weebified text
- ❍ /sanitize*:* always use this before /pat or any contact
- ❍ /pat*:* pats a user, or get patted
- ❍ /8ball*:* predicts using 8ball method 
-"""
