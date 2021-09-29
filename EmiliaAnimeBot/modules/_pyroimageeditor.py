@@ -25,7 +25,7 @@ from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_3 import (  # pylint:disable=imp
     black_border,
     red_border,
 )
-from MashaRoBot.pyrogramee.ImageEditor.edit_4 import (  # pylint:disable=import-error
+from EmiliaAnimeBot.pyrogramee.ImageEditor.edit_4 import (  # pylint:disable=import-error
     rotate_90,
     rotate_180,
     rotate_270,
