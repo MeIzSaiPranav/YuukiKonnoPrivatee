@@ -3,7 +3,7 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from EmiliaAnimeBot import app
+from EmiliaAnimeBot import pbot as app
 from EmiliaAnimeBot.utils.errors import capture_err
 from EmiliaAnimeBot.utils.dbfunctions import get_couple, save_couple
 
