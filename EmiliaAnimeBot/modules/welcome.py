@@ -61,6 +61,9 @@ ENUM_FUNC_MAP = {
 
 VERIFIED_USER_WAITLIST = {}
 
+OWNER_IMG = "https://telegra.ph/file/c2eaf184696036c300bf0.jpg"
+
+
 
 # do not async
 def send(update, message, keyboard, backup_message):
@@ -169,13 +172,15 @@ def new_member(update: Update, context: CallbackContext):
                 reply = False
 
             # Give the owner a special welcome
-            if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text(
-                    "My Owner Just Entered The Chat 😍",
-                    reply_to_message_id=reply)
-                welcome_log = (f"{html.escape(chat.title)}\n"
-                               f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat") (https://telegra.ph/file/c2eaf184696036c300bf0.jpg)
+           if new_mem.id == OWNER_ID:
+                update.effective_message.reply_photo(
+                    OWNER_IMG, caption= "Alert!! A Pero Was Just Entered On The Chat...", reply_to_message_id=reply
+                )
+                welcome_log = (
+                    f"{html.escape(chat.title)}\n"
+                    f"#USER_JOINED\n"
+                    f"Bot Owner just joined the group"
+                 )
                 continue
 
             # Welcome Devs
