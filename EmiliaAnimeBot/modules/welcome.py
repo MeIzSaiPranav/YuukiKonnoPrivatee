@@ -175,7 +175,7 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"Bot Owner just joined the chat") (https://telegra.ph/file/c2eaf184696036c300bf0.jpg)
                 continue
 
             # Welcome Devs
