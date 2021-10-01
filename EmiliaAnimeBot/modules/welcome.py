@@ -172,7 +172,7 @@ def new_member(update: Update, context: CallbackContext):
                 reply = False
 
             # Give the owner a special welcome
-           if new_mem.id == OWNER_ID:
+            if new_mem.id == OWNER_ID:
                 update.effective_message.reply_photo(
                     OWNER_IMG, caption= "Alert!! A Pero Was Just Entered On The Chat...", reply_to_message_id=reply
                 )
