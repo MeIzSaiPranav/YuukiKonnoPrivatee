@@ -7,7 +7,7 @@ from typing import Optional
 
 from EmiliaAnimeBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          dispatcher, StartTime, telethn, updater, pgram)
+                          dispatcher, StartTime, telethn, updater, pgram, sex)
 
 from EmiliaAnimeBot.modules import ALL_MODULES
 from EmiliaAnimeBot.modules.helper_funcs.chat_status import is_user_admin
@@ -744,6 +744,7 @@ def main():
         telethn.disconnect()
     else:
         telethn.run_until_disconnected()
+        sex.run_until_disconnected()
 
     updater.idle()
 
@@ -752,4 +753,5 @@ if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pgram.start()
+    sex.start()
     main()
