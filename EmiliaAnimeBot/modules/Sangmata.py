@@ -3,7 +3,7 @@ from telethon.tl import functions, types
 
 from EmiliaAnimeBot.events import register as Yuuki
 from EmiliaAnimeBot import telethn as tbot
-from EmiliaAnimeBot.functions.telethonuserbot import ubot
+from EmiliaAnimeBot.services.telethonuserbot import ubot
 
 
 async def is_register_admin(chat, user):
