@@ -103,6 +103,7 @@ if ENV:
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
+    SESSION = os.environ.get('SESSION', None)
     BOT_ID = 1999577962
 
     LOG_GROUP_ID = -1001594133235
@@ -157,6 +158,7 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
+    SESSION= Config.SESSION
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     HEROKU_API_KEY = Config.HEROKU_API_KEY
@@ -195,6 +197,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("emilia", API_ID, API_HASH)
+sex = TelegramClient (StringSession(SESSION), api_id = APP_ID, api_hash = APP_HASH)
 pgram = Client("EmiPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 pbot = Client("mizuharaPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 mongo_client = MongoClient(MONGO_DB_URI)
