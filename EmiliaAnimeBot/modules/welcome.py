@@ -62,7 +62,7 @@ ENUM_FUNC_MAP = {
 VERIFIED_USER_WAITLIST = {}
 
 OWNER_IMG = "https://telegra.ph/file/c2eaf184696036c300bf0.jpg"
-
+LEAVE_IMG = "https://telegra.ph/file/c63c60928d76f20fab1aa.mp4"
 
 
 # do not async
@@ -485,8 +485,9 @@ def left_member(update: Update, context: CallbackContext):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text(
-                    "Oi! Genos! He left..", reply_to_message_id=reply)
+                update.effective_message.reply_video(
+                    LEAVE_IMG, caption=   "Oof! Pero! Just left😢...", reply_to_message_id=reply
+                )
                 return
 
             # Give the devs a special goodbye
