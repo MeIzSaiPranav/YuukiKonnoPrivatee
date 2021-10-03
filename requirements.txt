@@ -83,3 +83,4 @@ opencv-python-headless
 odmantic
 dateparser==1.0.0
 pyDownload
+pydub
