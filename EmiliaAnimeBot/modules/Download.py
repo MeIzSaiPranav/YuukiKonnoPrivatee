@@ -3,8 +3,8 @@ import asyncio
 import math
 import os
 from pySmartDL import SmartDL
-from haruka.events import register
-from haruka import TEMP_DOWNLOAD_DIRECTORY
+from EmiliaAnimeBot.events import register
+from EmiliaAnimeBot import TEMP_DOWNLOAD_DIRECTORY
 import time
 from datetime import datetime
 from telethon import events
