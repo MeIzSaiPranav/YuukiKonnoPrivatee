@@ -1,4 +1,4 @@
-from Sophia import telethn as tbot
+from EmiliaAnimeBot import telethn as tbot
 from EmiliaAnimeBot.events import register
 import os
 import asyncio
