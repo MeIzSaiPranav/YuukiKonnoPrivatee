@@ -7,8 +7,8 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import events
 
-from KakashiAnimeBot.utils.pluginhelpers import is_admin
-from KakashiAnimeBot import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
+from EmiliaAnimeBot.utils.pluginhelpers import is_admin
+from EmiliaAnimeBot import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 
