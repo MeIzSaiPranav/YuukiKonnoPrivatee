@@ -7,8 +7,8 @@ from hachoir.parser import createParser
 from telethon import events
 from telethon.tl.types import DocumentAttributeVideo
 from telethon.tl.types import DocumentAttributeAudio
-from haruka.events import register
-from haruka import TEMP_DOWNLOAD_DIRECTORY
+from EmiliaAnimeBot.events import register
+from EmiliaAnimeBot import TEMP_DOWNLOAD_DIRECTORY
 import aiohttp
 import asyncio
 import math
