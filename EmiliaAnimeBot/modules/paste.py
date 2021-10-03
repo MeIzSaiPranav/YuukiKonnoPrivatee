@@ -24,13 +24,13 @@ def paste(update: Update, context: CallbackContext):
         return
 
     key = requests.post(
-        'https://nekobin.com/api/documents', json={
+        'https://hastebin.com/documents', json={
             "content": data
         }).json().get('result').get('key')
 
-    url = f'https://nekobin.com/{key}'
+    url = f'https://hastebin.com/{key}'
 
-    reply_text = f'Pasted to NekoBin!'
+    reply_text = f'Pasted to HasteBin!'
 
 
     message.reply_photo(
@@ -50,6 +50,6 @@ dispatcher.add_handler(PASTE_HANDLER)
 __command_list__ = ["paste"]
 __handlers__ = [PASTE_HANDLER]
 __help__ = """
- • `/paste` *:* Saves replied content to `nekobin.com` and replies with a url
+ • `/paste` *:* Saves replied content to `hastebin.com` and replies with a url
 """
 __mod_name__ = "Paste"
