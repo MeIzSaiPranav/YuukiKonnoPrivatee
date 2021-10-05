@@ -9,4 +9,4 @@ from EmiliaAnimeBot.events import register
 @register(pattern="^/tags$")
 async def virusscan(event):
     tags = videotags(link) 
-    await message.reply_text("**These are the Tags that I Found** \n\n ` {tags} `"
+    await message.reply_text("**These are the Tags that I Found** \n\n ` {tags} `
