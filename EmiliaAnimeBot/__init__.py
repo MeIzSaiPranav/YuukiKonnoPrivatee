@@ -99,6 +99,7 @@ if ENV:
     API_WEATHER = os.environ.get("API_OPENWEATHER", None)
     WALL_API = os.environ.get('WALL_API', None)
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "3ckuCb4MdD4qziuacviLgfQG")
+    OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
