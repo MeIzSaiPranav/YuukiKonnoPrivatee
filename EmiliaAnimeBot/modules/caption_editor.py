@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.errors import RPCError
 
-from EmiliaAnimeBot.utils.pluginhelpers import admins_only, get_text
+from EmiliaAnimeBot.function.pluginhelpers import admins_only, get_text
 from EmiliaAnimeBot import pbot
 
 
