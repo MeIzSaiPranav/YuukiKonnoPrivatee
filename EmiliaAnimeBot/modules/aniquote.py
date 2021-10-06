@@ -13,3 +13,8 @@ def aniquote(update: Update, context: CallbackContext):
     if len(text) == 1:
         r = requests.get("https://animechan.vercel.app/api/random").json()
         reply_text = f"**{resp['quote']}**\n"
+    else:
+        variabla = text[1]
+        r = requests.get(f"https://animechan.vercel.app/api/random").json()
+        reply_text = f"**{resp['quote']}**\n"
+    message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
