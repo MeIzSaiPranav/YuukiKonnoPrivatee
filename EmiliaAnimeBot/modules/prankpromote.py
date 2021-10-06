@@ -6,7 +6,7 @@ from EmiliaAnimeBot.events import register
 
 
 @register(pattern="ppromote")
-async def pprank(ult):
+async def ppromote (_, message):
     msg = await eor(ult, "**PROMOTING USER..**")
     await asyncio.sleep(1)
     await msg.edit("**PROMOTING USER...**")
