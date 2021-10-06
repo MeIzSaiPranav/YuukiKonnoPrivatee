@@ -2,7 +2,7 @@
 
 
 
-# <p align="center"><a href="https://github.com/MeIzSaiPranav/YuukiKonnoPrivatee"><img src="https://github-readme-stats.vercel.app/api/pin?username=YuukiKonnoPrivatee&show_icons=true&theme=dracula&hide_border=true&repo=YuukiKonnoPrivatee"></a></p>
+# <p align="center"><a href="https://github.com/MeIzSaiPranav/YuukiKonnoPrivatee"><img src="https://github-readme-stats.vercel.app/api/pin?username=MeIzSaiPranav&show_icons=true&theme=dracula&hide_border=true&repo=YuukiKonnoPrivatee"></a></p>
 <p align="center">
 
 
