@@ -10,6 +10,7 @@ from telethon.sessions import StringSession
 from telegraph import Telegraph
 from pyrogram import Client, errors
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
+from aiohttp import ClientSession
 
 StartTime = time.time()
 CMD_LIST = {}
