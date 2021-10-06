@@ -24,8 +24,8 @@ from EmiliaAnimeBot.pyrogramee.pluginshelper import convert_seconds_to_minutes a
 from EmiliaAnimeBot.pyrogramee.pluginshelper import fetch
 from EmiliaAnimeBot import pgram as pbot
 
-ARQ_API = 'MTXJXE-ELSWXE-UDRXJC-JCJQXN-ARQ'
-BOT_USERNAME = "EmiliaAnimeRoBot"
+ARQ_API = 'JTAIDA-NJXFTW-XUDHHJ-QSWVBM-ARQ'
+BOT_USERNAME = "YuukiKonnoRobot"
 ARQ_API_KEY = ARQ_API
 SUDOERS = OWNER_ID
 ARQ_API_URL = "https://thearq.tech"
@@ -70,7 +70,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/109e8fe98acc6d262b7c6.jpg",
+            thumb_url="https://telegra.ph/file/5f5071a7ee5ee1340f381.jpg",
             reply_markup=buttons,
         )
     ]
@@ -83,14 +83,14 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/EmiliaAnimeRobot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/YuukiKonnoRobot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Emilia✨](https://github.com/IzumiCypherX/EmiliaAnimeBot):**
+**[Yuuki✨](https://t.me/YuukiKonnoRobot):**
 
-**MainBot:** `{bot_state}`
+**Status:** `{bot_state}`
 
 **Python:** `3.9`
 
@@ -100,7 +100,7 @@ async def alive_function(answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/ea0ee1eebe63a1ea1aee5.jpg",
+            thumb_url="https://telegra.ph/file/cee0124db3ef6c6742e0e.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
