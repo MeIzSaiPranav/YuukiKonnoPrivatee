@@ -10,7 +10,6 @@ from telethon.sessions import StringSession
 from telegraph import Telegraph
 from pyrogram import Client, errors
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
-from aiohttp import ClientSession
 
 StartTime = time.time()
 CMD_LIST = {}
@@ -197,14 +196,6 @@ if not SPAMWATCH_API:
 else:
     sw = spamwatch.Client(SPAMWATCH_API)
 
-
-
-
-print("[Yuuki]: Initializing AIOHTTP Session")
-aiohttpsession = ClientSession()
-
-print("[Yuuki]: Initializing ARQ Client")
-arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)  
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("emilia", API_ID, API_HASH)
 sex = TelegramClient (StringSession(SESSION), api_id = API_ID, api_hash = API_HASH)
