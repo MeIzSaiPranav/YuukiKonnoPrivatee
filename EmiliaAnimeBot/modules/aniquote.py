@@ -12,4 +12,4 @@ def aniquote(update: Update, context: CallbackContext):
     text = message.text.split(" ", 1)
     if len(text) == 1:
         r = requests.get("https://animechan.vercel.app/api/random").json()
-        reply_text = f"**{resp['quote']}**\n
+        reply_text = f"**{resp['quote']}**\n"
