@@ -1,6 +1,6 @@
 import asyncio
 
-from . import *
+from bs4 import *
 
 from EmiliaAnimeBot.events import register
 
