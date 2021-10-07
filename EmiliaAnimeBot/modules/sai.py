@@ -25,7 +25,7 @@ import re
 import os
 import html
 import requests
-import EmiliaAnimeBot.modules.sql.sai_sql.py as sql
+import EmiliaAnimeBot.modules.sql.sai_sql as sql
 
 from time import sleep
 from telegram import ParseMode
