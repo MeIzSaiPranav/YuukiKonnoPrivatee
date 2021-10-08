@@ -5,7 +5,6 @@ import time
 import EmiliaAnimeBot.modules.fun_strings as fun_strings
 from EmiliaAnimeBot import dispatcher
 from EmiliaAnimeBot.modules.disable import DisableAbleCommandHandler
-import EmiliaAnimeBot.modules.helper_funcs.gbam_strings as fun
 from EmiliaAnimeBot.modules.helper_funcs.chat_status import is_user_admin
 from EmiliaAnimeBot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
@@ -325,8 +324,6 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_text(string)
         
         
-@run_asyncdef gbam(update, context): user = update.effective_user chat = update.effective_chat bot, args = context.bot, context.args message = update.effective_message curr_user = html.escape(message.from_user.first_name) user_id = extract_user(message, args) if user_id: gbam_user = bot.get_chat(user_id) user1 = curr_user user2 = html.escape(gbam_user.first_name) else: user1 = curr_user user2 = bot.first_name if update.effective_message.chat.type == "private": return if int(user.id) in DRAGONS or int(user.id) in DEMONS: gbamm = fun.GBAM reason = random.choice(fun.GBAM_REASON) gbam = gbamm.format(user1=user1, user2=user2, chatid=chat.id, reason=reason) context.bot.sendMessage(chat.id, gbam, parse_mode=ParseMode.HTML)
-
 __help__ = """
  ❍ /runs*:* reply a random string from an array of replies
  ❍ /slap*:* slap a user, or get slapped if not a reply
@@ -353,7 +350,6 @@ TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
 SHRUG_HANDLER = DisableAbleCommandHandler("shrug", shrug)
 BLUETEXT_HANDLER = DisableAbleCommandHandler("bluetext", bluetext)
 RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg)
-GBAM_HANDLER = DisableAbleCommandHandler("gbam", gbam)
 DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
@@ -367,7 +363,6 @@ dispatcher.add_handler(RUNS_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
-dispatcher.add_handler(GBAM_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
 dispatcher.add_handler(SHRUG_HANDLER)
 dispatcher.add_handler(BLUETEXT_HANDLER)
