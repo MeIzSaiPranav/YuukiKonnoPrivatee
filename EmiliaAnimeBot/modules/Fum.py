@@ -13,7 +13,7 @@ from EmiliaAnimeBot.modules.helper_funcs.alternate import typing_action
 from EmiliaAnimeBot import dispatcher, DRAGONS, DEMONS, LOGGER
 from EmiliaAnimeBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
-import EmiliaAnimeBot.modules.helper_funcs.gbam_strings as fum
+import EmiliaAnimeBot.modules.helper_funcs.gbam_strings as fun
 
 @run_async
 def gbun(update, context):
