@@ -161,12 +161,12 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more interactive group chat experience.
+Chatbot utilizes the Kuki's api which allows Yuuki to talk and provide a more interactive group chat experience.
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
   
- Reports bugs at Kuki-api.tk
-*Powered by ItelAi* (https://github/itelai) from @KukiUpdates
+ Reports bugs at @PigasusSupport
+*Powered by MadBoi* (https/t.me/Me_Iz_Mad_Boi) from @PigasusUpdates
 """
 
 __mod_name__ = "ChatBot"
