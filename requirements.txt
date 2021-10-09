@@ -45,6 +45,7 @@ pyowm
 tabulate
 parsel
 mtranslate
+pyrogram
 tgcrypto
 configparser
 pytz
