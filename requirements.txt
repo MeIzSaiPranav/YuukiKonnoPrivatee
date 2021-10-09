@@ -45,7 +45,7 @@ pyowm
 tabulate
 parsel
 mtranslate
-pyrogram
+pyrogram==1.2.9
 tgcrypto
 configparser
 pytz
