@@ -69,7 +69,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-          text="🥰𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦🥰", callback_data="help_back"
+          text="🥰𝗛𝗘𝗟𝗣🥰", url="https://t.me/YuukiKonnoRobot?start=help"
         ),
     ],
    
@@ -81,7 +81,7 @@ buttons = [
     ],
         [
        InlineKeyboardButton(
-           text="💝𝗢𝗪𝗡𝗘𝗥💝", url="https://t.me/Me_Iz_Mad_Boi"
+           text="💝𝗬𝗨𝗨𝗞𝗜 𝗦𝗨𝗣𝗣𝗢𝗥𝗧💝", url="https://t.me/YuukiSupportChat"
          ),
      ],
      [
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
                   InlineKeyboardButton(text="💞𝗦𝗢𝗨𝗥𝗖𝗘💞", url="https://github.com/EmiliaAnimeBot")
                   ],
                   [
-                  InlineKeyboardButton(text="💘𝗢𝗪𝗡𝗘𝗥💘", url="https://t.me/Me_Iz_Mad_Boi")
+                  InlineKeyboardButton(text="💘𝗬𝗨𝗨𝗞𝗜 𝗦𝗨𝗣𝗣𝗢𝗥𝗧💘", url="https://t.me/YuukiSupportChat")
                   ]
                 ]
             ),
