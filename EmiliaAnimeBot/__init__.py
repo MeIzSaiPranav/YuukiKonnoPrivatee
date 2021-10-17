@@ -69,13 +69,7 @@ if ENV:
     except ValueError:
         raise Exception(
             "Your tiger users list does not contain valid integers.")
-       
-try:
-        ASSISTANT_ID = set(int(x) for x in os.environ.get("ASSISTANT_ID", "").split())
-    except ValueError:
-        raise Exception(
-            "Your Assistant users list does not contain valid integers.")
-        
+           
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "YuukiKonnoRobot")
     INFOPIC = bool(os.environ.get('INFOPIC', False))
     EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
@@ -144,13 +138,7 @@ else:
     except ValueError:
         raise Exception(
             "Your support users list does not contain valid integers.")
-        
-try:
-        ASSISTANT_ID = set(int(x) for x in os.environ.get("ASSISTANT_ID", "").split())
-    except ValueError:
-        raise Exception(
-            "Your Assistant users list does not contain valid integers.")
-
+       
     try:
         WOLVES = set(int(x) for x in Config.WOLVES or [])
     except ValueError:
@@ -252,7 +240,6 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
-ASSISTANT_ID = list(ASSISTANT_ID)
 
 # Load at end to ensure all prev variables have been set
 from EmiliaAnimeBot.modules.helper_funcs.handlers import (CustomCommandHandler,
