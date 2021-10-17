@@ -5,7 +5,7 @@ import time
 from functools import partial
 
 import EmiliaAnimeBot.modules.sql.welcome_sql as sql
-from EmiliaAnimeBot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
+from EmiliaAnimeBot import (DEV_USERS, ASSISTANT_ID, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher, JOIN_LOGGER)
 from EmiliaAnimeBot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
