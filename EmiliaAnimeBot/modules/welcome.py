@@ -5,7 +5,7 @@ import time
 from functools import partial
 
 import EmiliaAnimeBot.modules.sql.welcome_sql as sql
-from EmiliaAnimeBot import (DEV_USERS, ASSISTANT_ID, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
+from EmiliaAnimeBot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher, JOIN_LOGGER)
 from EmiliaAnimeBot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
@@ -191,13 +191,6 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 continue
                 
-# Welcome Assistant
-            elif new_mem.id in ASSISTANT_ID:
-                update.effective_message.reply_text(
-                    "My Music Assistant Just Entered The Chat",
-                    reply_to_message_id=reply,
-                )
-                continue
 
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
