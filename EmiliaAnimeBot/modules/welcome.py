@@ -190,6 +190,14 @@ def new_member(update: Update, context: CallbackContext):
                     reply_to_message_id=reply,
                 )
                 continue
+                
+# Welcome Assistant
+            elif new_mem.id in ASSISTANT_ID:
+                update.effective_message.reply_text(
+                    "My Music Assistant Just Entered The Chat",
+                    reply_to_message_id=reply,
+                )
+                continue
 
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
@@ -242,7 +250,7 @@ def new_member(update: Update, context: CallbackContext):
                         .format(chat.title, chat.id),
                         parse_mode=ParseMode.HTML)
                 update.effective_message.reply_text(
-                    "Watashi ga kita!", reply_to_message_id=reply)
+                    "Thanks For Adding Me😍!", reply_to_message_id=reply)
                 continue
 
             else:
