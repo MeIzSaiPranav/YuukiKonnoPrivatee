@@ -4,7 +4,7 @@ import random
 from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot import telethn as tbot
 from EmiliaAnimeBot import telethn as tgbot
-PHOTO = https://telegra.ph/file/ae43f3254f76d0f7f9cf7.jpg
+PHOTO = "https://telegra.ph/file/ae43f3254f76d0f7f9cf7.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
