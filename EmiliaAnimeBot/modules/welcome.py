@@ -211,7 +211,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "A Whitelisted user joined a chat",
+                    "My Music Assistant Just Arrived 😍njoy",
                     reply_to_message_id=reply)
                 continue
 
@@ -243,7 +243,7 @@ def new_member(update: Update, context: CallbackContext):
                         .format(chat.title, chat.id),
                         parse_mode=ParseMode.HTML)
                 update.effective_message.reply_text(
-                    "Thanks For Adding Me😍!", reply_to_message_id=reply)
+                    "Thanks For Adding Me!😍", reply_to_message_id=reply)
                 continue
 
             else:
