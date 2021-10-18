@@ -20,7 +20,7 @@ async def awake(event):
   PIKACHU += "**♡ My Master :** [Madboi](t.me/Me_Iz_mad_boi)\n\n"
   PIKACHU += "**♡ Telethon Version : 1.23.0**\n\n"
   
-  on = await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
+  on = await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU)
   await asyncio.sleep(5)
   ok = await event.edit_message(yes.chat_id, on, file=fuck, buttons=BUTTON) 
 
