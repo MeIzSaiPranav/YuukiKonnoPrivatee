@@ -3,13 +3,13 @@ import traceback
 
 from pyrogram import filters
 from pyrogram.types import ChatPermissions
-from KURUMIBOT import OWNER_ID
+from EmiliaAnimeBot import OWNER_ID
 import os 
 
 
-from KURUMIBOT import BOT_ID, DRAGONS
-from KURUMIBOT import pbot as app
-from KURUMIBOT import pbot
+from EmiliaAnimeBot import BOT_ID, DRAGONS
+from EmiliaAnimeBot import pbot as app
+from EmiliaAnimeBot import pbot
 
 
 async def member_permissions(chat_id: int, user_id: int):
