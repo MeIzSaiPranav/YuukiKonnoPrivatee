@@ -5,6 +5,7 @@ import asyncio
 from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot import telethn as tbot
 """=====================LOL====================="""
+PHOTO = "https://telegra.ph/file/ae43f3254f76d0f7f9cf7.jpg"
 fuck = "https://telegra.ph//file/7f3ae4b9105c001e5ac59.jpg"
 sex = "https://telegra.ph/file/408ab930c9dec34367590.jpg"
 lmao = "https://telegra.ph//file/a3545f201acb627a02bed.jpg"
