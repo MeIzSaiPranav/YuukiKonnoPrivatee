@@ -23,16 +23,16 @@ async def awake(event):
   BUTTON = [[Button.url("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", "https://t.me/PigasusSupport"), Button.url("𝙐𝙋𝘿𝘼𝙏𝙀", "https://t.me/PigasusUpdates")]]
   on = await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
   await asyncio.sleep(5)
-   ok = await event.edit_message(yes.chat_id, on, file=fuck, buttons=BUTTON) 
+  ok = await event.edit_message(yes.chat_id, on, file=fuck, buttons=BUTTON) 
 
-    await asyncio.sleep(5)
-    ok2 = await event.edit_message(yes.chat_id, ok, file=sex, buttons=BUTTON)
+  await asyncio.sleep(5)
+  ok2 = await event.edit_message(yes.chat_id, ok, file=sex, buttons=BUTTON)
 
-    await asyncio.sleep(5)
-    ok3 = await event.edit_message(yes.chat_id, ok2, file=lmao, buttons=BUTTON)
+  await asyncio.sleep(5)
+  ok3 = await event.edit_message(yes.chat_id, ok2, file=lmao, buttons=BUTTON)
     
-    await asyncio.sleep(5)
-    ok4 = await event.edit_message(yes.chat_id, ok3, file=lmao2, buttons=BUTTON)
+  await asyncio.sleep(5)
+  ok4 = await event.edit_message(yes.chat_id, ok3, file=lmao2, buttons=BUTTON)
  
 @register(pattern=("/myinfo"))
 async def semx(event):
