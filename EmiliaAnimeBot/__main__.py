@@ -55,7 +55,7 @@ STICKER = "CAACAgEAAx0CXss_8QABAVFXYV6sAtCltVRQAAEvBOxRaeq66gOoAAJCAQACASXxRgl19
 
 
 PM_START_TEXT = """
-Hey There! [👩‍💼](https://telegra.ph/file/d62ddd0f18b333b6aafff.jpg) 
+Hey There! [👩‍💼](https://telegra.ph/file/a23b5fcdd44f77769e153.jpg) 
 My name is *Yuuki*
 I am an Anime Themed group management bot.
 You can find my list of available commands with *🔐Commands*   
