@@ -20,8 +20,8 @@ async def awake(event):
   PIKACHU += "**♡ Yuuki : 2.0 LATEST**\n\n"
   PIKACHU += "**♡ My Master :** [Madboi](t.me/Me_Iz_mad_boi)\n\n"
   PIKACHU += "**♡ Telethon Version : 1.23.0**\n\n"
-  
-  on = await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU)
+  BUTTON = [[Button.url("𝙎𝙐𝙋𝙋𝙊𝙍𝙏", "https://t.me/PigasusSupport"), Button.url("𝙐𝙋𝘿𝘼𝙏𝙀", "https://t.me/PigasusUpdates")]]
+  on = await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
   await asyncio.sleep(5)
   ok = await event.edit_message(yes.chat_id, on, file=fuck, buttons=BUTTON) 
 
@@ -30,10 +30,9 @@ async def awake(event):
 
   await asyncio.sleep(5)
   ok3 = await event.edit_message(yes.chat_id, ok2, file=lmao, buttons=BUTTON)
-    
+
   await asyncio.sleep(5)
   ok4 = await event.edit_message(yes.chat_id, ok3, file=lmao2, buttons=BUTTON)
- 
 @register(pattern=("/myinfo"))
 async def semx(event):
   await tbot.send_message(event.chat_id, f'**➢ Hᴇʏ {(event.sender.first_name)}**\n\n**➢ I Aᴍ [Yᴜᴜᴋɪ](t.me/YuukiKonnoRobot)**\n**➢ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [Sᴀɪ](t.me/Me_Iz_Mad_Boi)**', file='cute.jpg', buttons=[Button.inline('**Iɴғᴏ**', data="sex"), Button.url('**Sᴜᴘᴘᴏʀᴛ**', 'https://t.me/YuukiSupportChat')], reply_to=event)
