@@ -1,8 +1,18 @@
-from telethon import events, Button, custom
+from telethon import events, Button, custom, version
 import re, os
 import random
+import asyncio
+import requests
+import datetime
+import time
+from PIL import Image
+from io import BytesIO
+from datetime import datetime
+from EmiliaAnimeBot import StartTime, dispatcher
+from telethon.tl.types import ChannelParticipantsAdmins
 from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot import telethn as tbot
+from EmiliaAnimeBot import telethn as borg
 
 edit_time = 10
 """ =======================CONSTANTS====================== """
@@ -36,8 +46,8 @@ async def _human_time_duration(seconds):
 @register(pattern=("/alive"))
 async def awake(event):
   current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
+  uptime_sec = (current_time - START_TIME).total_seconds()
+  uptime = await _human_time_duration(int(uptime_sec))
   PIKACHU = event.sender.first_name
   PIKACHU = "**♡ I,m Yuuki💖** \n\n"
   PIKACHU += "**♡ I'm Working Properly**\n\n"
