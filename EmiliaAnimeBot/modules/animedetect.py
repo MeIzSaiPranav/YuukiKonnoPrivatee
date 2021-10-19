@@ -55,7 +55,7 @@ async def whatanime(c: Client, m: Message):
         if not getattr(reply, 'empty', True):
             media = reply.photo or reply.animation or reply.video or reply.document
     if not media:
-        await m.reply_text('Only Works In Any Video,Gif Or Picture😉')
+        await m.reply_text('Only Works on GIFS, VIDEOS and PICTURES')
         return
     with tempfile.TemporaryDirectory() as tempdir:
         reply = await m.reply_text('Downloading media...')
@@ -63,7 +63,7 @@ async def whatanime(c: Client, m: Message):
         new_path = os.path.join(tempdir, '1.png')
         proc = await asyncio.create_subprocess_exec('ffmpeg', '-i', path, '-frames:v', '1', new_path)
         await proc.communicate()
-        await reply.edit_text('Wait Lemme Check It💝')
+        await reply.edit_text('Uploading media to trace.moe...')
         with open(new_path, 'rb') as file:
             async with session.post('https://api.trace.moe/search?anilistInfo', data={"image": file}) as resp:
                 json = await resp.json()
@@ -99,7 +99,7 @@ async def whatanime(c: Client, m: Message):
                 text += f"\n<b>Synonyms:</b> {synonyms}"
             if is_adult:
                 text += f"\n<b>NSFW:</b> True"
-            
+
             text += f'\n<b>Similarity:</b> {(Decimal(similarity) * 100).quantize(Decimal(".01"))}%'
             if episode:
                 text += f"\n<b>Episode:</b> {episode}"
