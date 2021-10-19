@@ -18,6 +18,16 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
+                         "https://telegra.ph/file/3e4c4c7746effbc1cae05.jpg",
+                         "https://telegra.ph/file/8911f004d485fbd2498f7.jpg",
+                         "https://telegra.ph/file/eaa599a28c20e005c4bf3.jpg",
+                         "https://telegra.ph/file/bbbb4f09bcbf08c6f9d90.jpg",
+                         "https://telegra.ph/file/dd89932df32cc185a3c77.jpg",
+                         "https://telegra.ph/file/db4461bdc89cf71548777.jpg",
+                         "https://telegra.ph/file/9f75086e4e68cb51bf70c.jpg",
+                         "https://telegra.ph/file/a81328a9aeda4456c7a15.jpg",
+                         "https://telegra.ph/file/4bb2a5cc2b8d0d342c6fb.jpg",
+                         "https://telegra.ph/file/21e986fd70b0e8f616917.jpg",
                          "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
                          "https://telegra.ph/file/08c5fbe14cc4b13d1de05.jpg",
                          "https://telegra.ph/file/66614a049d74fe2a220dc.jpg",
