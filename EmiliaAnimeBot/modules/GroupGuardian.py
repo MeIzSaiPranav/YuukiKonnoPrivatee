@@ -22,7 +22,7 @@ from EmiliaAnimeBot.modules.sql_extended.nsfw_watch_sql import (
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from EmiliaAnimeBot.telethon import tbot
+from EmiliaAnimeBot import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
