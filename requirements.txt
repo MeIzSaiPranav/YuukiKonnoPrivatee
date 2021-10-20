@@ -1,6 +1,9 @@
 future
 countryinfo
 emoji
+better_profanity
+nudepy
+google_trans_new
 pykeyboard
 lxml
 beautifulsoup4
