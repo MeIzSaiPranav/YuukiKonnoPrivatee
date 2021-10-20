@@ -16,9 +16,9 @@ from EmiliaAnimeBot import telethn as tbot
 edit_time = 10
 """=====================YUKKI====================="""
 yukki1 = "https://telegra.ph/file/ae43f3254f76d0f7f9cf7.jpg"
-yukki2 = "https://telegra.ph//file/7f3ae4b9105c001e5ac59.jpg"
-yukki3 = "https://telegra.ph/file/408ab930c9dec34367590.jpg"
-yukki4 = "https://telegra.ph//file/a3545f201acb627a02bed.jpg"
+yukki2 = "https://telegra.ph/file/0958215fe0ca611f2b7a3.jpg"
+yukki3 = "https://telegra.ph/file/0e71b32cb9eb556b6833d.jpg"
+yukki4 = "https://telegra.ph/file/749facab79add0d08d680.jpg"
 """=====================YUKKI====================="""
 
 START_TIME = datetime.utcnow()
