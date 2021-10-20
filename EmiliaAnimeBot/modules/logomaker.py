@@ -17,7 +17,9 @@ from EmiliaAnimeBot import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
-LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
+LOGO_LINKS            = ["https://telegra.ph/file/640a961b4170f6149d570.jpg",
+                         "https://telegra.ph/file/99b56305fa9c50767f574.jpg",
+                         "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
                          "https://telegra.ph/file/3e4c4c7746effbc1cae05.jpg",
                          "https://telegra.ph/file/8911f004d485fbd2498f7.jpg",
                          "https://telegra.ph/file/eaa599a28c20e005c4bf3.jpg",
