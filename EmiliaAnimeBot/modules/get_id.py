@@ -7,7 +7,7 @@ import os
 async def image_maker(event) -> None:
     replied_user = await event.get_reply_message()
     # Download profile photo
-    await sex.download_profile_photo(
+    await System.download_profile_photo(
         replied_user.from_id.user_id, file="user.png", download_big=True
     )
     user_photo = Image.open("user.png")
@@ -32,7 +32,7 @@ async def image_maker(event) -> None:
     draw.text((393, 50), str(replied_user.from_id.user_id), fill=color, font=font)
     id_template.save("user_id.png")
     force_document = "doc" in event.text
-    await sex.send_message(
+    await System.send_message(
         event.chat_id,
         "Generated User ID",
         reply_to=event.message.id,
