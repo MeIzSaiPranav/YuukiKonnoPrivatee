@@ -1,5 +1,5 @@
-from Sophia.events import register
-from Sophia import telethn as System
+from EmiliaAnimeBot.events import register
+from EmiliaAnimeBot import telethn as System
 from PIL import Image, ImageDraw, ImageFont
 import os
 
