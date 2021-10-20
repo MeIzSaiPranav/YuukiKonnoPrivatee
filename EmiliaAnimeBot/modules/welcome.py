@@ -243,7 +243,7 @@ def new_member(update: Update, context: CallbackContext):
                         .format(chat.title, chat.id),
                         parse_mode=ParseMode.HTML)
                 update.effective_message.reply_text(
-                    "Thanks For Adding Me!😍", reply_to_message_id=reply)
+                    "Thanks For Adding Me!😍 Join @YuukiSupportChat For Support.", reply_to_message_id=reply)
                 continue
 
             else:
