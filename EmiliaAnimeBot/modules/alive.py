@@ -9,7 +9,7 @@ from io import BytesIO
 from datetime import datetime
 from EmiliaAnimeBot import telethn as yukki
 from telethon.tl.types import ChannelParticipantsAdmins
-from EmilaAnimeBot import StartTime, dispatcher
+from EmiliaAnimeBot import StartTime, dispatcher
 import asyncio
 from EmiliaAnimeBot.events import register
 from EmiliaAnimeBot import telethn as tbot
