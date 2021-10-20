@@ -7,7 +7,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 from datetime import datetime
-from EmiliaAnimeBot import telethn as yukki
+from EmiliaAnimeBot import telethn as borg
 from telethon.tl.types import ChannelParticipantsAdmins
 from EmiliaAnimeBot import StartTime, dispatcher
 import asyncio
@@ -58,25 +58,25 @@ async def hmm(yes):
     on = await borg.send_file(yes.chat_id, file=yukki1,caption=yukki, buttons=BUTTON)
 
     await asyncio.sleep(edit_time)
-    ok = await yukki.edit_message(yes.chat_id, on, file=yukki2) 
+    ok = await borg.edit_message(yes.chat_id, on, file=yukki2) 
 
     await asyncio.sleep(edit_time)
-    ok2 = await yukki.edit_message(yes.chat_id, ok, file=yukki3)
+    ok2 = await borg.edit_message(yes.chat_id, ok, file=yukki3)
 
     await asyncio.sleep(edit_time)
-    ok3 = await yukki.edit_message(yes.chat_id, ok2, file=yukki1)
+    ok3 = await borg.edit_message(yes.chat_id, ok2, file=yukki1)
     
     await asyncio.sleep(edit_time)
-    ok4 = await yukki.edit_message(yes.chat_id, ok3, file=yukki3)
+    ok4 = await borg.edit_message(yes.chat_id, ok3, file=yukki3)
     
     await asyncio.sleep(edit_time)
-    ok5 = await yukki.edit_message(yes.chat_id, ok4, file=yukki2)
+    ok5 = await borg.edit_message(yes.chat_id, ok4, file=yukki2)
     
     await asyncio.sleep(edit_time)
-    ok6 = await yukki.edit_message(yes.chat_id, ok5, file=yukki1)
+    ok6 = await borg.edit_message(yes.chat_id, ok5, file=yukki1)
     
     await asyncio.sleep(edit_time)
-    ok7 = await yukki.edit_message(yes.chat_id, ok6, file=yukki4)
+    ok7 = await borg.edit_message(yes.chat_id, ok6, file=yukki4)
 
 @register(pattern=("/myinfo"))
 async def semx(event):
