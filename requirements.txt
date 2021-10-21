@@ -1,7 +1,6 @@
 future
 countryinfo
 emoji
-telegraph
 better_profanity
 nudepy
 google_trans_new
@@ -88,3 +87,4 @@ dateparser==1.0.0
 pyDownload
 pydub
 YoutubeTags
+telegraph
