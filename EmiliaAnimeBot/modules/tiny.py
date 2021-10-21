@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from LaylaRobot import telethn as tbot
+from EmiliaAnimeBot import telethn as tbot
 import glob
 import io
 import os
@@ -21,8 +21,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from LaylaRobot import *
-from LaylaRobot.events import register
+from EmiliaAnimeBot import *
+from EmiliaAnimeBot.events import register
 
 
 @register(pattern="^/tiny (.*)")
