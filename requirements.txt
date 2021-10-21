@@ -68,7 +68,6 @@ motor
 search-engine-parser==0.6.6
 dnspython
 youtube_search
-telegraph
 PyDictionary==2.0.1
 youtube-search-python
 secureme
