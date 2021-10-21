@@ -1,6 +1,7 @@
 future
 countryinfo
 emoji
+telegraph>=1.4.1
 better_profanity
 nudepy
 google_trans_new
