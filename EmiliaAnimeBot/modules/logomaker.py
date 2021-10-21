@@ -28,6 +28,7 @@ LOGO_LINKS            = ["https://telegra.ph/file/640a961b4170f6149d570.jpg",
                          "https://telegra.ph/file/70cd5080916fb6847956a.jpg",
                          "https://telegra.ph/file/190a011e380afa3126f24.jpg",
                          "https://telegra.ph/file/12f5e3001073610130e13.jpg",
+                         "https://telegra.ph/file/c4ac93294c708108fa17c.jpg",
                          "https://telegra.ph/file/f40024db28d19c9c9258c.jpg",
                          "https://telegra.ph/file/7ae4e353fa75e8d781f74.jpg",
                          "https://telegra.ph/file/827dd3e4a04a8458802ea.jpg",
@@ -369,7 +370,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "Yuuki.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by {(event.sender.first_name)}**\n\n** Via "[Yuuki💖](https://t.me/YuukiKonnoRobot)"       
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by {(event.sender.first_name)}**\n\n** Via "[Yuuki](https://t.me/YuukiKonnoRobot)"       
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
