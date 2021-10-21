@@ -80,30 +80,8 @@ async def hmm(yes):
 
 @register(pattern=("/myinfo"))
 async def semx(event):
-     await tbot.send_message(event.chat_id, f'**➢ Hᴇʏ {(event.sender.first_name)}**\n\n**➢ I Aᴍ [Yᴜᴜᴋɪ](t.me/YuukiKonnoRobot)**\n**➢ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [Sᴀɪ](t.me/Me_Iz_Mad_Boi)**', file='cute.jpg', buttons=[Button.inline('**Iɴғᴏ**', data="sex"), Button.url('**Sᴜᴘᴘᴏʀᴛ**', 'https://t.me/YuukiSupportChat')], reply_to=event)
-on = await tbot.send_file(event.chat_id, file=yukki1,caption=yukki, buttons=BUTTON)
+  await tbot.send_message(event.chat_id, f'**➢ Hᴇʏ {(event.sender.first_name)}**\n\n**➢ I Aᴍ [Yᴜᴜᴋɪ](t.me/YuukiKonnoRobot)**\n**➢ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [Sᴀɪ](t.me/Me_Iz_Mad_Boi)**', file='cute.jpg', buttons=[Button.inline('**Iɴғᴏ**', data="sex"), Button.url('**Sᴜᴘᴘᴏʀᴛ**', 'https://t.me/YuukiSupportChat')], reply_to=event)
 
-      await asyncio.sleep(edit_time) 
-      ok = await tbot.edit_message(event.chat_id, on, file=yukki2, buttons=BUTTON) 
-    
-      await asyncio.sleep(edit_time)
-      ok2 = await tbot.edit_message(event.chat_id, ok, file=yukki3, buttons=BUTTON)
-
-      await asyncio.sleep(edit_time)
-      ok3 = await tbot.edit_message(event.chat_id, ok2, file=yukki1, buttons=BUTTON)
-    
-      await asyncio.sleep(edit_time)
-      ok4 = await tbot.edit_message(event.chat_id, ok3, file=yukki3, buttons=BUTTON)
-    
-      await asyncio.sleep(edit_time)
-      ok5 = await tbot.edit_message(event.chat_id, ok4, file=yukki2, buttons=BUTTON)
-    
-      await asyncio.sleep(edit_time)
-      ok6 = await tbot.edit_message(event.chat_id, ok5, file=yukki1, buttons=BUTTON)
-    
-      await asyncio.sleep(edit_time)
-      ok7 = await tbot.edit_message(event.chat_id, ok6, file=yukki4, buttons=BUTTON)
-    
 @tbot.on(events.CallbackQuery(pattern=r"sex"))
 async def ok(event):
      await event.answer(f'➢ Fɪʀsᴛ Nᴀᴍᴇ : {(event.sender.first_name)}\n➢ Lᴀsᴛ Nᴀᴍᴇ : {(event.sender.last_name)}\n➢ Usᴇʀɴᴀᴍᴇ : {(event.sender.username)}\n➢ Usᴇʀ Iᴅ : {(event.sender.id)}', alert=True)
