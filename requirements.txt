@@ -30,7 +30,7 @@ coffeehouse
 pymongo
 regex
 bleach
-ython-markdown2==3.0.0
+python-markdown2==3.0.0
 wikipedia
 telethon==1.16.4
 PyYAML>5.0
